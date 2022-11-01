@@ -10,6 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Curl'
-        run: curl -d '{"path":"/","password":"","page_num":1,"page_size":30}' \
-                  -H "Content-Type: application/json" \
-                  -X POST https://files.zwz.moe/ROM
+        run: curl -X POST https://files.zwz.moe/ROM
